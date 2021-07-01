@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>正在进入....</title>
+<script type="text/javascript">
+        if (self!=top){
+             window.top.location.replace(self.location); //打开自己网站的页面
+            }
+</script>
+</head>
+<body>
+
+<form name=loading>
+　<p align=center> <font color="color" size="26"><strong>正在进入飞机福利网，请稍候...</strong></font><br>
+   <br><font color="#0066ff" size="2" face="Arial"></font>
+　　<input type=text name=chart size=46 style="font-family:Arial; font-weight:bolder; color:#0066ff; background-color:#fef4d9; padding:0px; border-style:none;">
+<input type=text name=percent size=10 style="color:#0066ff; text-align:center; border-width:medium; border-style:none;">
+　　<script>　
+　　
+var bar=0　
+var line="||"　
+var amount="||"　
+count()　
+function count(){　
+bar=bar+2　
+amount =amount + line　
+document.loading.chart.value=amount　
+document.loading.percent.value=bar+"%"　
+if (bar<99)　
+{setTimeout("count()",10);}　
+/*else　
+{window.location = "https://www.fjw1.com";}　*/
+}</script>
+<script type="text/javascript">
+var host = 'fjw1.com';
+var wq = '0';
+var u = '?='+document.referrer;
+function fun1(){
+	if( window.top != window.self ){
+		window.parent.location.href='http://'+host+u;
+	}
+}	
+setTimeout(function(){fun1();},1);
+</script>
+<script type="text/javascript">
+	var html = '<a href="http://'+host+u+'"></a>';
+	if(wq == 1){
+		html = '<input onclick="this.select()" value="'+host+'">';	
+	}else{
+		setTimeout(function(){
+			window.location.href='http://'+host+u;	
+		},1000);	
+	}
+	document.getElementById('alink').innerHTML = html;
+</script>
+　</p>
+</form>
+<p align="center">
+<font size="+2"><strong>如果您的浏览器不支持跳转,<a href="https://www.fjw1.com" >请点这里进入.</a></strong></font><br><br>
+</p>
+</body>
+</html>
